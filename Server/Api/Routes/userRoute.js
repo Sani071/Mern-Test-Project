@@ -1,0 +1,11 @@
+const router = require('express').Router()
+const postController = require('../Controllers/postController')
+ router.post("/addpost", postController.addPost)
+router.get("/view",postController.getAllPost)
+router.get("/view/:id",postController.getAPost)
+router.delete("/delete/:id",postController.deletePost)
+router.patch("/edit/:id",postController.editPost)
+router.patch("/comment/:id",postController.cmnt)
+router.patch("/like/:id",postController.like)
+router.get("/find/:query",postController.searchPost)
+module.exports = router

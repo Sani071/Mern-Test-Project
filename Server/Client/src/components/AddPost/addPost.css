@@ -1,0 +1,15 @@
+.main{
+    width:650px;
+    height: 395px;
+}
+.post{
+    height: 250px;
+    width: 500px;
+}
+.postInput{
+  height: 80%;
+  width:100%;
+}
+.pointer{
+    cursor: pointer;
+}
